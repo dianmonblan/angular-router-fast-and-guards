@@ -17,16 +17,16 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 2. Versión de nuestro de nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) ejecutando el comando `ng version`
 3.  Solicitando ayuda a nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) haciendo uso del comando `ng help`
 4.  Obtener información detallada de como crear nuestro espacio de trabajo para la aplicación mediante la herramienta de comandos [Angular CLI](https://cli.angular.io/) con el comando `ng new --help`
-5.  Creando nuestro espacio de trabajo para la aplicación ejecutando el comando `ng new router-fast-and-guards` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
-    5.1.    _? Do you want to enforce stricter type checking and stricter bundle budgets in the workspace?
-            This setting helps improve maintainability and catch bugs ahead of time.
-		    For more information, see https://angular.io/strict (y/N)_
-		    **N**
-    5.2.    _? Would you like to add Angular routing? (y/N)_
-		    **y**
-	5.3.    _? Which stylesheet format would you like to use?_
-		    **CSS**
-	5.4.    😴 **¡Calma¡** NO desesperemos falta poco
+5. Creando nuestro espacio de trabajo para la aplicación ejecutando el comando `ng new router-fast-and-guards` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
+   5.1. _? Do you want to enforce stricter type checking and stricter bundle budgets in the workspace?
+        This setting helps improve maintainability and catch bugs ahead of time.
+        For more information, see https://angular.io/strict (y/N)_
+        **N**
+   5.2. _? Would you like to add Angular routing? (y/N)_
+        **y**
+   5.3. _? Which stylesheet format would you like to use?_
+        **CSS**
+   5.4. 😴 **¡Calma¡** NO desesperemos falta poco
 6.  Ingresar al espacio de trabajo creado mediante el comando `cd router-fast-and-guards`
 7.  Corriendo nuestra aplicación sobre el entorno de desarrollo lanzando el comando `ng serve` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
     7.1.    _? Would you like to share anonymous usage data about this project with the Angular Team at
@@ -36,16 +36,16 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 	7.2.    😴 **¡Calma¡** NO desesperemos falta poco
 	7.3.    **✔ Compiled successfully** abriremos una prestaña de nuestro navegador web e ingresaremos a la dirección `http://localhost:4200`
 	!Lo hemos conseguido ya tenemos nuestra aplicación en modo 🚀¡
-**Sugerencia:**
+**Sugerencias:**
 	-   Obtener información detallada de como crear y correr nuestra aplicación mediante la herramienta de comandos [Angular CLI](https://cli.angular.io/) ejecuanto el comando `ng serve --help`
 	-   Corriendo nuestra aplicación y abriendo el enlace a nuestro aplicación sobre una pestaña del navegador web predeterminado de nuestro sistema operativo sobre el entorno de desarrollo lanzando el comando `ng serve --open` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
 
 ## [RUTAS](https://angular.io/api/router)
-1. Creación de módulo **user-profile** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/user-profile --module=app --route=user-profile --routing --routing-scope=Child`
+1.  Creación de módulo **user-profile** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/user-profile --module=app --route=user-profile --routing --routing-scope=Child`
 	1.1. Ingresamos a la dirección `http://localhost:4200/user-profile` sobre nuestra navegador web para ver el módulo **user-profile**
-2. Creación de módulo **distinctive** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/distinctive --module=app --route=distinctive --routing --routing-scope=Child`
+2.  Creación de módulo **distinctive** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/distinctive --module=app --route=distinctive --routing --routing-scope=Child`
 	2.1. Ingresamos a la dirección `http://localhost:4200/distinctive` sobre nuestra navegador web para ver el módulo **distinctive**
-3. Creación de módulo **groups** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups --module=app --route=groups --routing --routing-scope=Child`
+3.  Creación de módulo **groups** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups --module=app --route=groups --routing --routing-scope=Child`
 	3.1. Ingresamos a la dirección `http://localhost:4200/groups` sobre nuestra navegador web para ver el módulo **groups**
 	3.2. Creación de submódulo **angular** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/angular --module=/modules/groups --route=angular --routing --routing-scope=Child`
 		3.2.1. Ingresamos a la dirección `http://localhost:4200/groups/angular` sobre nuestra navegador web para ver el submódulo **angular**
