@@ -13,32 +13,32 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 > [Divide y vencerás](https://es.wikipedia.org/wiki/Divide_y_vencer%C3%A1s)
 
 ## CREACIÓN, INSTALACIÓN Y PUESTA EN MARCHA DE NUESTRO ESPACIO DE TRABAJO Y APLICACIÓN [ANGULAR](https://angular.io/)
-1. Verificando la existencia de nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng`
+1.  Verificando la existencia de nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng`
 2. Versión de nuestro de nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) ejecutando el comando `ng version`
-3. Solicitando ayuda a nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) haciendo uso del comando `ng help`
-4. Obtener información detallada de como crear nuestro espacio de trabajo para la aplicación mediante la herramienta de comandos [Angular CLI](https://cli.angular.io/) con el comando `ng new --help`
-5. Creando nuestro espacio de trabajo para la aplicación ejecutando el comando `ng new router-fast-and-guards` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
-	5.1. _? Do you want to enforce stricter type checking and stricter bundle budgets in the workspace?
-		This setting helps improve maintainability and catch bugs ahead of time.
-		For more information, see https://angular.io/strict (y/N)_
-		**N**
-	5.2. _? Would you like to add Angular routing? (y/N)_
-		**y**
-	5.3. _? Which stylesheet format would you like to use?_
-		**CSS**
-	5.4. 😴 **¡Calma¡** NO desesperemos falta poco
-6. Ingresar al espacio de trabajo creado mediante el comando `cd router-fast-and-guards`
-7. Corriendo nuestra aplicación sobre el entorno de desarrollo lanzando el comando `ng serve` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
-	7.1.	_? Would you like to share anonymous usage data about this project with the Angular Team at
-		Google under Google’s Privacy Policy at https://policies.google.com/privacy? For more
-		details and how to change this setting, see http://angular.io/analytics. (y/N)_
-		**N**
-	7.2.	😴 **¡Calma¡** NO desesperemos falta poco
-	7.3.	**✔ Compiled successfully** abriremos una prestaña de nuestro navegador web e ingresaremos a la dirección `http://localhost:4200`
-		!Lo hemos conseguido ya tenemos nuestra aplicación en modo 🚀¡
+3.  Solicitando ayuda a nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) haciendo uso del comando `ng help`
+4.  Obtener información detallada de como crear nuestro espacio de trabajo para la aplicación mediante la herramienta de comandos [Angular CLI](https://cli.angular.io/) con el comando `ng new --help`
+5.  Creando nuestro espacio de trabajo para la aplicación ejecutando el comando `ng new router-fast-and-guards` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
+    5.1.    _? Do you want to enforce stricter type checking and stricter bundle budgets in the workspace?
+            This setting helps improve maintainability and catch bugs ahead of time.
+		    For more information, see https://angular.io/strict (y/N)_
+		    **N**
+    5.2.    _? Would you like to add Angular routing? (y/N)_
+		    **y**
+	5.3.    _? Which stylesheet format would you like to use?_
+		    **CSS**
+	5.4.    😴 **¡Calma¡** NO desesperemos falta poco
+6.  Ingresar al espacio de trabajo creado mediante el comando `cd router-fast-and-guards`
+7.  Corriendo nuestra aplicación sobre el entorno de desarrollo lanzando el comando `ng serve` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
+    7.1.    _? Would you like to share anonymous usage data about this project with the Angular Team at
+	        Google under Google’s Privacy Policy at https://policies.google.com/privacy? For more
+		    details and how to change this setting, see http://angular.io/analytics. (y/N)_
+		    **N**
+	7.2.    😴 **¡Calma¡** NO desesperemos falta poco
+	7.3.    **✔ Compiled successfully** abriremos una prestaña de nuestro navegador web e ingresaremos a la dirección `http://localhost:4200`
+	!Lo hemos conseguido ya tenemos nuestra aplicación en modo 🚀¡
 **Sugerencia:**
-	- Obtener información detallada de como crear y correr nuestra aplicación mediante la herramienta de comandos [Angular CLI](https://cli.angular.io/) ejecuanto el comando `ng serve --help`
-	- Corriendo nuestra aplicación y abriendo el enlace a nuestro aplicación sobre una pestaña del navegador web predeterminado de nuestro sistema operativo sobre el entorno de desarrollo lanzando el comando `ng serve --open` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
+	-   Obtener información detallada de como crear y correr nuestra aplicación mediante la herramienta de comandos [Angular CLI](https://cli.angular.io/) ejecuanto el comando `ng serve --help`
+	-   Corriendo nuestra aplicación y abriendo el enlace a nuestro aplicación sobre una pestaña del navegador web predeterminado de nuestro sistema operativo sobre el entorno de desarrollo lanzando el comando `ng serve --open` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
 
 ## [RUTAS](https://angular.io/api/router)
 1. Creación de módulo **user-profile** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/user-profile --module=app --route=user-profile --routing --routing-scope=Child`
@@ -94,7 +94,7 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 		<span>Groups</span>
 	</a>
   
-	<a class="card card-small" routerLink]="/events" routerLinkActive="active">
+	<a class="card card-small" routerLink="/events" routerLinkActive="active">
 		<span>Events</span>
 	</a>
 </div>
