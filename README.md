@@ -405,7 +405,7 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 
 ## RECURSOS DE APOYO
 
-### NICOLAS MOLINA
+### Nicolas Molina
 [Aplicando Lazy Loading en Angular](https://www.youtube.com/watch?v=KI6xyeyMCSo)
 [Precargando módulos en Angular](https://www.youtube.com/watch?v=db2VunrvVKs)
 [Usando Quicklink para precargar contenido en sitios web](https://www.youtube.com/watch?v=8WtnJ9EgyDU)
