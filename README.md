@@ -33,36 +33,36 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 - Corriendo nuestra aplicación y abriendo el enlace a nuestro aplicación sobre una pestaña del navegador web predeterminado de nuestro sistema operativo sobre el entorno de desarrollo lanzando el comando `ng serve --open` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
 
 ## [RUTAS](https://angular.io/api/router)
-1.  Creación de módulo **user-profile** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/user-profile --module=app --route=user-profile --routing --routing-scope=Child`
-	1.1. Ingresamos a la dirección `http://localhost:4200/user-profile` sobre nuestra navegador web para ver el módulo **user-profile**
-2.  Creación de módulo **distinctive** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/distinctive --module=app --route=distinctive --routing --routing-scope=Child`
-	2.1. Ingresamos a la dirección `http://localhost:4200/distinctive` sobre nuestra navegador web para ver el módulo **distinctive**
-3.  Creación de módulo **groups** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups --module=app --route=groups --routing --routing-scope=Child`
-	3.1. Ingresamos a la dirección `http://localhost:4200/groups` sobre nuestra navegador web para ver el módulo **groups**
-	3.2. Creación de submódulo **angular** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/angular --module=/modules/groups --route=angular --routing --routing-scope=Child`
-		3.2.1. Ingresamos a la dirección `http://localhost:4200/groups/angular` sobre nuestra navegador web para ver el submódulo **angular**
-	3.3. Creación de submódulo **react** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/react --module=/modules/groups --route=react --routing --routing-scope=Child`
-		3.3.1. Ingresamos a la dirección `http://localhost:4200/groups/react` sobre nuestra navegador web para ver el submódulo **react**
-	3.4. Creación de submódulo **vue** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/vue --module=/modules/groups --route=vue --routing --routing-scope=Child`
-		3.4.1. Ingresamos a la dirección `http://localhost:4200/groups/vue` sobre nuestra navegador web para ver el submódulo **vue**
-	3.5. Creación de submódulo **svelte** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/svelte --module=/modules/groups --route=svelte --routing --routing-scope=Child`
-		3.5.1. Ingresamos a la dirección `http://localhost:4200/groups/svelte` sobre nuestra navegador web para ver el submódulo **svelte**
-	3.6	Convirtiendo submódulos **angular, react, vue, svelte** en rutas hijas de **groups**
-		3.6.1. Integración de etiqueta `<router-outlet></router-outlet>` sobre fichero **HTML** `src/app/modules/groups/groups.component.html`
-		3.6.2. Moviendo rutas de _"submódulos"_ del _"módulo"_ **groups** sobre fichero de rutas `src/app/modules/groups/groups-routing.module.ts` haciendo uso de la propiedad children de la ruta padre declarada
+1. Creación de módulo **user-profile** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/user-profile --module=app --route=user-profile --routing --routing-scope=Child`
+    1. Ingresamos a la dirección `http://localhost:4200/user-profile` sobre nuestra navegador web para ver el módulo **user-profile**
+2. Creación de módulo **distinctive** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/distinctive --module=app --route=distinctive --routing --routing-scope=Child`
+    1. Ingresamos a la dirección `http://localhost:4200/distinctive` sobre nuestra navegador web para ver el módulo **distinctive**
+3. Creación de módulo **groups** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups --module=app --route=groups --routing --routing-scope=Child`
+    1. Ingresamos a la dirección `http://localhost:4200/groups` sobre nuestra navegador web para ver el módulo **groups**
+    2. Creación de submódulo **angular** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/angular --module=/modules/groups --route=angular --routing --routing-scope=Child`
+        1. Ingresamos a la dirección `http://localhost:4200/groups/angular` sobre nuestra navegador web para ver el submódulo **angular**
+	3. Creación de submódulo **react** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/react --module=/modules/groups --route=react --routing --routing-scope=Child`
+        1. Ingresamos a la dirección `http://localhost:4200/groups/react` sobre nuestra navegador web para ver el submódulo **react**
+	4. Creación de submódulo **vue** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/vue --module=/modules/groups --route=vue --routing --routing-scope=Child`
+		1. Ingresamos a la dirección `http://localhost:4200/groups/vue` sobre nuestra navegador web para ver el submódulo **vue**
+	5. Creación de submódulo **svelte** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/svelte --module=/modules/groups --route=svelte --routing --routing-scope=Child`
+		1. Ingresamos a la dirección `http://localhost:4200/groups/svelte` sobre nuestra navegador web para ver el submódulo **svelte**
+	6. Convirtiendo submódulos **angular, react, vue, svelte** en rutas hijas de **groups**
+		1. Integración de etiqueta `<router-outlet></router-outlet>` sobre fichero **HTML** `src/app/modules/groups/groups.component.html`
+		2. Moviendo rutas de _"submódulos"_ del _"módulo"_ **groups** sobre fichero de rutas `src/app/modules/groups/groups-routing.module.ts` haciendo uso de la propiedad children de la ruta padre declarada
 		```javascript
 			const routes: Routes = [{
 				path: '', component: GroupsComponent,
 				children: [{ path: 'angular', loadChildren: () => import('./submodules/angular/angular.module').then(m => m.AngularModule) }, { path: 'react', loadChildren: () => import('./submodules/react/react.module').then(m => m.ReactModule) }, { path: 'vue', loadChildren: () => import('./submodules/vue/vue.module').then(m => m.VueModule) }, { path: 'svelte', loadChildren: () => import('./submodules/svelte/svelte.module').then(m => m.SvelteModule) }]
 			}];
 		```
-		3.6.3. Navegando _"submódulos"_ del _"módulo"_ **groups**
-			3.6.1. Ingresamos a la dirección `http://localhost:4200/groups/angular` sobre nuestra navegador web para ver el submódulo **angular**
-			3.6.2. Ingresamos a la dirección `http://localhost:4200/groups/react` sobre nuestra navegador web para ver el submódulo **react**
-			3.6.3. Ingresamos a la dirección `http://localhost:4200/groups/vue` sobre nuestra navegador web para ver el submódulo **vue**
-			3.6.4. Ingresamos a la dirección `http://localhost:4200/groups/svelte` sobre nuestra navegador web para ver el submódulo **svelte**
+		3. Navegando _"submódulos"_ del _"módulo"_ **groups**
+			1. Ingresamos a la dirección `http://localhost:4200/groups/angular` sobre nuestra navegador web para ver el submódulo **angular**
+			2. Ingresamos a la dirección `http://localhost:4200/groups/react` sobre nuestra navegador web para ver el submódulo **react**
+			3. Ingresamos a la dirección `http://localhost:4200/groups/vue` sobre nuestra navegador web para ver el submódulo **vue**
+			4. Ingresamos a la dirección `http://localhost:4200/groups/svelte` sobre nuestra navegador web para ver el submódulo **svelte**
 4. Creación de módulo **events** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/events --module=app --route=events --routing --routing-scope=Child`
-	4.1..Ingresamos a la dirección `http://localhost:4200/events` sobre nuestra navegador web para ver el módulo **events**
+    1. Ingresamos a la dirección `http://localhost:4200/events` sobre nuestra navegador web para ver el módulo **events**
 
 ### [CONECTANDO RUTAS MEDIANTE DIRECTIVAS SOBRE ENLACES HTML](https://angular.io/api/router#directives)
 1. Implementación de enlaces para navegar por los diferentes módulos padres **user-profile, distinctive, groups, events** sobre fichero **HTML** `src/app/app.component.html` haciendo uso de la directiva **[routerLink](https://angular.io/api/router/RouterLink)** y directiva **[routerLinkActive](https://angular.io/api/router/RouterLinkActive)** encargada de agregar una clase al enlace activo.
