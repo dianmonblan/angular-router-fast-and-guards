@@ -8,11 +8,13 @@
 
 # RUTAS Y GUARDIAS
 
+## [RUTAS](https://angular.io/guide/router)
+
 Implementa el servicio Angular Router, que permite la navegación de una vista a la siguiente a medida que los usuarios realizan tareas de la aplicación.
 
 > [Divide y vencerás](https://es.wikipedia.org/wiki/Divide_y_vencer%C3%A1s)
 
-## CREACIÓN, INSTALACIÓN Y PUESTA EN MARCHA DE NUESTRO ESPACIO DE TRABAJO Y APLICACIÓN [ANGULAR](https://angular.io/)
+#### CREACIÓN, INSTALACIÓN Y PUESTA EN MARCHA DE NUESTRO ESPACIO DE TRABAJO Y APLICACIÓN [ANGULAR](https://angular.io/)
 1. Verificando la existencia de nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng`
 2. Versión de nuestro de nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) ejecutando el comando `ng version`
 3. Solicitando ayuda a nuestra herramienta de comandos [Angular CLI](https://cli.angular.io/) haciendo uso del comando `ng help`
@@ -32,20 +34,20 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 - Obtener información detallada de como crear y correr nuestra aplicación mediante la herramienta de comandos [Angular CLI](https://cli.angular.io/) ejecuanto el comando `ng serve --help`
 - Corriendo nuestra aplicación y abriendo el enlace a nuestro aplicación sobre una pestaña del navegador web predeterminado de nuestro sistema operativo sobre el entorno de desarrollo lanzando el comando `ng serve --open` haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/)
 
-## [RUTAS](https://angular.io/api/router)
-1. Creación de módulo **user-profile** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/user-profile --module=app --route=user-profile --routing --routing-scope=Child`
+### [RUTAS](https://angular.io/api/router)
+1. Creación de módulo con nombre **user-profile** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/user-profile --module=app --route=user-profile --routing --routing-scope=Child`
     1. Ingresamos a la dirección `http://localhost:4200/user-profile` sobre nuestra navegador web para ver el módulo **user-profile**
-2. Creación de módulo **distinctive** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/distinctive --module=app --route=distinctive --routing --routing-scope=Child`
+2. Creación de módulo con nombre **distinctive** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/distinctive --module=app --route=distinctive --routing --routing-scope=Child`
     1. Ingresamos a la dirección `http://localhost:4200/distinctive` sobre nuestra navegador web para ver el módulo **distinctive**
-3. Creación de módulo **groups** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups --module=app --route=groups --routing --routing-scope=Child`
+3. Creación de módulo con nombre **groups** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups --module=app --route=groups --routing --routing-scope=Child`
     1. Ingresamos a la dirección `http://localhost:4200/groups` sobre nuestra navegador web para ver el módulo **groups**
-    2. Creación de submódulo **angular** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/angular --module=/modules/groups --route=angular --routing --routing-scope=Child`
+    2. Creación de submódulo con nombre **angular** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/angular --module=/modules/groups --route=angular --routing --routing-scope=Child`
         1. Ingresamos a la dirección `http://localhost:4200/groups/angular` sobre nuestra navegador web para ver el submódulo **angular**
-	3. Creación de submódulo **react** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/react --module=/modules/groups --route=react --routing --routing-scope=Child`
+	3. Creación de submódulo con nombre **react** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/react --module=/modules/groups --route=react --routing --routing-scope=Child`
         1. Ingresamos a la dirección `http://localhost:4200/groups/react` sobre nuestra navegador web para ver el submódulo **react**
-	4. Creación de submódulo **vue** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/vue --module=/modules/groups --route=vue --routing --routing-scope=Child`
+	4. Creación de submódulo con nombre **vue** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/vue --module=/modules/groups --route=vue --routing --routing-scope=Child`
 		1. Ingresamos a la dirección `http://localhost:4200/groups/vue` sobre nuestra navegador web para ver el submódulo **vue**
-	5. Creación de submódulo **svelte** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/svelte --module=/modules/groups --route=svelte --routing --routing-scope=Child`
+	5. Creación de submódulo con nombre **svelte** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/groups/submodules/svelte --module=/modules/groups --route=svelte --routing --routing-scope=Child`
 		1. Ingresamos a la dirección `http://localhost:4200/groups/svelte` sobre nuestra navegador web para ver el submódulo **svelte**
 	6. Convirtiendo submódulos **angular, react, vue, svelte** en rutas hijas de **groups**
 		1. Integración de etiqueta `<router-outlet></router-outlet>` sobre fichero **HTML** `src/app/modules/groups/groups.component.html`
@@ -64,7 +66,7 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 4. Creación de módulo **events** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate module /modules/events --module=app --route=events --routing --routing-scope=Child`
     1. Ingresamos a la dirección `http://localhost:4200/events` sobre nuestra navegador web para ver el módulo **events**
 
-### [CONECTANDO RUTAS MEDIANTE DIRECTIVAS SOBRE ENLACES HTML](https://angular.io/api/router#directives)
+#### [CONECTANDO RUTAS MEDIANTE DIRECTIVAS SOBRE ENLACES HTML](https://angular.io/api/router#directives)
 1. Implementación de enlaces para navegar por los diferentes módulos padres **user-profile, distinctive, groups, events** sobre fichero **HTML** `src/app/app.component.html` haciendo uso de la directiva **[routerLink](https://angular.io/api/router/RouterLink)** y directiva **[routerLinkActive](https://angular.io/api/router/RouterLinkActive)** encargada de agregar una clase al enlace activo.
 ```css
   .card-container .card:not(.highlight-card):hover, .card-container .card.active {
@@ -403,13 +405,71 @@ Implementa el servicio Angular Router, que permite la navegación de una vista a
 </div>
 ```
 
-## RECURSOS DE APOYO
+### RECURSOS DE APOYO
 
-### Nicolas Molina
+#### Nicolas Molina
 [Aplicando Lazy Loading en Angular](https://www.youtube.com/watch?v=KI6xyeyMCSo)
 [Precargando módulos en Angular](https://www.youtube.com/watch?v=db2VunrvVKs)
 [Usando Quicklink para precargar contenido en sitios web](https://www.youtube.com/watch?v=8WtnJ9EgyDU)
 
-### Angular University
+#### Angular University
 [Angular Router](https://www.youtube.com/watch?v=VES1eTNxi1s&list=PLOa5YIicjJ-VA38pChXHhq8jY2U8iYynr)
 [Angular Router In Depth](https://www.youtube.com/watch?v=lr8fmg1pgM0&list=PLOa5YIicjJ-VpOOoLczAGTLEEznZ2JEa6)
+
+## [GUARDIAS](https://angular.io/guide/router)
+
+> Prevenir el acceso NO AUTORIZADO
+
+Protectores de ruta para evitar que los usuarios naveguen a partes de una aplicación sin autorización. Los siguientes protectores de ruta están disponibles en Angular:
+
+1. [CanActivate](https://angular.io/api/router/CanActivate) decide si se puede activar una ruta.
+    1. Creación de guardia con nombre **can-activate** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate guard /guards/canActivate --implements=CanActivate --project=app.module`
+    2. Importar guardia sobre los proveedores del módulo `src/app/app.module.ts`
+2. [CanActivateChild](https://angular.io/api/router/CanActivateChild) decide si se puede activar una ruta secundaria/hija.
+    1. Creación de guardia con nombre **can-activate-child** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate guard /guards/canActivateChild --implements=CanActivateChild`
+    2. Importar guardia sobre los proveedores del módulo `src/app/app.module.ts`
+3. [CanDeactivate](https://angular.io/api/router/CanDeactivate) decide si una ruta puede desactivarse.
+    1. Creación de guardia con nombre **can-deactivate** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate guard /guards/canDeactivate --implements=CanDeactivate`
+    2. Importar guardia sobre los proveedores del módulo `src/app/app.module.ts`
+4. [Resolve](https://angular.io/api/router/Resolve) resuelve datos durante la navegación.
+    1. Creación de guardia con nombre **resolve** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate resolver /guards/resolve`
+    2. Importar guardia sobre los proveedores del módulo `src/app/app.module.ts`
+5. [CanLoad](https://angular.io/api/router/CanLoad) decide si se pueden cargar la ruta secundaria/hija mediante carga perezosa.
+    1. Creación de guardia con nombre **can-load** haciendo uso de la herramienta de comandos [Angular CLI](https://cli.angular.io/) mediante el comando `ng generate guard /guards/canLoad --implements=CanLoad`
+    2. Importar guardia sobre los proveedores del módulo `src/app/modules/groups/groups.module.ts`
+
+```javascript
+// src/app/app.module.ts
+
+import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+
+import { AppRoutingModule } from './app-routing.module';
+import { AppComponent } from './app.component';
+
+import { CanActivateChildGuard } from './guards/can-activate-child.guard';
+import { CanActivateGuard } from './guards/can-activate.guard';
+import { CanDeactivateGuard } from './guards/can-deactivate.guard';
+import { CanLoadGuard } from './guards/can-load.guard';
+
+import { ResolveResolver } from './guards/resolve.resolver';
+
+@NgModule({
+  declarations: [
+    AppComponent
+  ],
+  imports: [
+    BrowserModule,
+    AppRoutingModule,
+  ],
+  providers: [
+    CanActivateGuard,
+    CanActivateChildGuard,
+    CanDeactivateGuard,
+    ResolveResolver,
+    CanLoadGuard
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule { }
+```
